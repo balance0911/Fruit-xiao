@@ -5,6 +5,7 @@ exchange_status = -1
 #记录上一次选中的水果，值为水果索引
 last_sel = [-1, -1]
 #在core/handler.py文件的Manager类中创建一个clear_ele()方法
+score_list=[]
 def clear_ele(self):
     single_score=self.score
     self.change_value_sign=False
@@ -336,3 +337,4 @@ def record_score(self):
             self.score_list.append(self.score)
             self.destory_animal_num = [0, 0, 0, 0, 0, 0]
             self.score = 0    
+
